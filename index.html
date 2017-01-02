@@ -1,0 +1,338 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.scss"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/simple.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h1>Wakes of Innovation in Project Networks</h1>
+            <h3>The Case of Digital 3-D Representations in Architecture, Engineering, and Construction
+            </h3>
+            <p class="xs">By Jonathan Ott & Pascal Brokmeier</p>
+            <aside class="notes">
+                20 minutes in total
+            </aside>
+        </section>
+
+        <section>
+            <cite>The first project was the most successful we may have ever had. ... And what convinced us was we
+                got the job done a month early. Everybody made money, there were no extras - that never happens.</cite>
+
+            <p class="xs">Jim Glymph, November 9, 2002
+            </p>
+        </section>
+
+        <!--Context-->
+        <section>
+            <section data-background-image="assets/contextbg.jpg">
+                <h1>Context</h1>
+            </section>
+            <section>
+                <h2>Context</h2>
+                <div class="row">
+                    <div class="col-3 box">
+                        <h4>Construction Industry</h4>
+                        <p>Architecture, Construction and Engineering (AEC) of buildings</p>
+                        <p>“Loose coupling” between agents</p>
+                    </div>
+                    <div class="col-3 box">
+                        <h4>1990s</h4>
+                        <p>Advent of computer 3D imagery after brief period of transition from paper to 2D digital
+                            models</p>
+                    </div>
+                    <div class="col-3 box">
+                        <h4>Diverse Networks
+                        </h4>
+                        <p>Multiple heterogenous actors in production networks of various professions
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Context - Status Quo</h2>
+                <div class="row">
+                    <div class="col-3 box">
+                        <h4>History
+                        </h4>
+                        <p>Hundreds of years of tradition in industry</p>
+                        <cite>‘this is how it has always been done’</cite>
+                    </div>
+                    <div class="col-3 box">
+                        <h4>Formalisation</h4>
+                        <p>Sequential process of formal communication</p>
+                        <ul class="s">
+                            <li>Architects create design, customer approves
+                            </li>
+                            <li>Documents passed along to contractors. Questions answered via request for information
+                                (RFI)
+                            </li>
+                            <li>Contractors & subcontractors construct in ‘workmanlike way’</li>
+                        </ul>
+                    </div>
+                    <div class="col-3 box">
+                        <h4>Loose coupling</h4>
+                        <p>Communication always done via 2D paper based plans</p>
+                        <p>Each party had to transfer to own knowledge domain and rework the transfer documents for
+                            their own needs</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!--Frank Gehry-->
+        <section>
+            <section data-background-image="assets/frankbg.png">
+                <h1 class="white">Frank Gehry</h1>
+
+            </section>
+
+            <section class="full">
+                <div class="row">
+
+                    <div class="col-3">
+                        <img src="assets/prague.png" alt="" class="collage6" style="height:29%">
+                        <p class="xs">Prague</p>
+                        <img src="assets/LA.png" alt="" class="collage6">
+                        <p class="xs">LA</p>
+                    </div>
+                    <div class="col-3">
+                        <img src="assets/seattle.png" alt="" class="collage6">
+                        <p class="xs">Seattle</p>
+                        <img src="assets/elciego.png" alt="" class="collage6">
+                        <p class="xs">Elciego</p>
+                    </div>
+                    <div class="col-3">
+                        <img src="assets/cleveland.png" alt="" class="collage6">
+                        <p class="xs">Cleveland</p>
+                        <img src="assets/sydney.png" alt="" class="collage6" style="height:30%">
+                        <p class="xs">Sydney</p>
+                    </div>
+                </div>
+
+                <aside class="notes">
+                    Left to right (top to bottom)
+                    Dancing House in Prague (1996)
+                    The Museum of Pop Culture in Seattle (2000)
+                    Weatherhead School of Management, Case Western Reserve University, Cleveland, Ohio (2002)
+                    Walt Disney Concert Hall in Los Angeles (2003)
+                    Hotel Marqués de Riscal in Elciego, Spain (2006)
+                    UTS Sydney Dr Chau Chak Wing Building in Sydney, Australia (2014)
+
+                </aside>
+            </section>
+            <section data-background-video="assets/introutscut.mp4" data-background-video-loop="true"
+                     data-background-video-muted="true">
+
+                <aside class="notes" data-markdown>
+                    UTS Video
+
+                    - forms very atypical
+                    - almost impossible to imagine using 2D blueprint
+                    - opened 2015
+                    - rounded walls and surfaces everywhere
+                    - huge challenge regarding plastering, electrics, ....
+                </aside>
+            </section>
+
+            <section>
+                <h2>A Fishy Problem</h2>
+
+
+                <div class="row">
+                    <div class="col-2">
+                        <ul>
+                            <li>First project employing 3D modeling</li>
+                            <li>Fish statue for 1992 Barcelona Olympics</li>
+                            <li>Tight schedule, limited budget, highly integrated team</li>
+                        </ul>
+                    </div>
+                    <div class="col-2"><img src="assets/fish.png" alt="" class="center" style="width: 566px;"></div>
+                </div>
+
+                <aside class="notes" data-markdown="">
+                    - swinging back to 1990s
+                    - first project that was being done in 3D
+                    - highly integrated team, everyone was involved in desing project
+                </aside>
+            </section>
+        </section>
+        <!--3D Presentation-->
+        <section class="full">
+            <section data-background-image="assets/dig3dbg.png">
+                <h1 class="white">Digital 3D Representation</h1>
+            </section>
+
+            <section class="full">
+                <div class="tophalf"><img src="assets/blueprint.png" alt="" style="width:100%; border: none;    "></div>
+                <div class="bottomhalf">
+                    <video src="assets/3dCADTesla.mp4" autoplay loop></video></div>
+            </section>
+
+        </section>
+
+
+        <!--Wakes of innovation-->
+        <section>
+            <section data-background-image="assets/wakesbg.png">
+                <h1 class="white">Wakes of innovation</h1>
+            </section>
+            <section data-background-video="assets/wavescut.mp4" data-background-video-loop="true"
+                     data-background-video-muted="true">
+
+
+                <aside class="notes" data-markdown>
+                    --- WAVE VIDEO ---
+
+                    - Metaphor for innovation rippling across the network originating from multiple sources
+                    - influencing each other
+                    - causing highs and lows by adding or canceling each other
+                </aside>
+            </section>
+
+
+
+            <section>
+                <h2>Driving Forces</h2>
+
+                <ul class="space">
+                    <li>Trading Zones</li>
+                    <li>Boundry Spanning activities</li>
+                    <li>Intercalation</li>
+                    <li>Design Vision and Mindfullness</li>
+                </ul>
+
+
+            </section>
+
+            <section>
+                <h3 id="boundry-spanning-activities">Boundry Spanning Activities</h3>
+                <ul class="space">
+                    <li>describing activies between classic skill domains</li>
+                    <li>bridging e.g. marketing and IT, HR and finance, ...</li>
+                    <li>lead to knowledge transfer</li>
+                </ul>
+            </section>
+
+            <section>
+                intercalation
+            </section>
+
+            <section>
+                <p>design vision and mindfullness</p>
+                <p></p>
+            </section>
+        </section>
+        <!--Limitations and Discussion-->
+        <section>
+            <section>
+                <h2>Limitations & Discussion</h2>
+            </section>
+
+            <section>
+
+                <h3>Limitations</h3>
+                <ul class="">
+                    <li>Focus on leading innovator / 'Superstar' not translateable</li>
+                    <li>Construction industry not typical → heterogeneous players</li>
+                    <li>Describing projects with unique liability circumstances (MIT insurance)</li>
+                </ul>
+
+
+                <aside class="notes" data-markdown="">
+                    - Focus on leading innovator with top notch talent at disposal. 'Superstar' not translateable to
+                    'normal' projects
+                    - Construction industry is not typical due to very heterogeneous players involved
+                </aside>
+            </section>
+
+            <section>
+                <h3>Implications</h3>
+                <div class="row">
+                    <div class="col-2 box">
+                        <h4>Before</h4>
+                        <ul>
+                            <li>1 Firm</li>
+                            <li>1 Innovation</li>
+                            <li>Homogenous environment</li>
+                        </ul>
+                    </div>
+                    <div class="col-2 box">
+                        <h4>After</h4>
+                        <ul>
+                            <li>Many firms</li>
+                            <li>network of agents</li>
+                            <li>heterogeneous networks</li>
+                            <li>multitude of innovations</li>
+                            <li>interaction of innovations</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+
+            <section>
+                <p>Implications continued</p>
+                <p>incomplete design leads to innovations --> chaos leads to inno idea</p>
+                <p>github and other similar environments today that offer such landscapes and trade innovations
+                    originating from multiple</p>
+            </section>
+        </section>
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        //config:
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        // Bounds for smallest/largest possible scale to apply to content
+        minScale: 0.2,
+        maxScale: 1.5,
+
+        width: 1280,
+        height: 720,
+
+
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            }
+        ]
+    });
+</script>
+</body>
+</html>

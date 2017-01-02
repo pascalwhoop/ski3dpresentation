@@ -1,0 +1,65 @@
+.reveal .row {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .reveal .row.nospace {
+    justify-content: inherit; }
+  .reveal .row .col {
+    position: relative;
+    order: 1; }
+  .reveal .row .col-3 {
+    width: 30%;
+    position: relative; }
+  .reveal .row .col-2 {
+    width: 47%;
+    position: relative; }
+.reveal .center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
+.reveal .box {
+  border: 2px solid #717171;
+  padding: 10px; }
+  .reveal .box h1, .reveal .box h2, .reveal .box h3, .reveal .box h4, .reveal .box h5 {
+    background: #717171;
+    margin: -10px;
+    padding: 10px;
+    margin-bottom: 10px; }
+.reveal .footnote {
+  font-size: 0.5em;
+  position: absolute;
+  bottom: 5px; }
+.reveal .tophalf, .reveal .bottomhalf {
+  position: absolute;
+  height: 50%; }
+.reveal .bottomhalf {
+  top: 50%; }
+.reveal ul.space li {
+  padding-bottom: 1em; }
+.reveal cite {
+  border-left: 2px solid #717171;
+  padding-left: 10px;
+  display: block;
+  font-style: italic; }
+.reveal .s {
+  font-size: 0.75em; }
+.reveal .xs {
+  font-size: 0.5em; }
+.reveal.slide .slides > section.full, .reveal.slide .slides .stack section.full {
+  min-height: 100% !important;
+  position: absolute !important;
+  top: 0 !important;
+  align-items: center !important; }
+.reveal *.white {
+  color: white; }
+.reveal .collage6 {
+  max-width: 100%;
+  display: block; }
+
+.print-pdf .reveal.slide .slides > section.full, .print-pdf .reveal.slide .slides > section > section.full {
+  min-height: 770px !important;
+  position: relative !important; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,106 @@
+$primary: #717171;
+$white: white;
+$padding: 10px;
+$font-xs: 0.5em;
+$font-s: 0.75em;
+
+.reveal {
+  .row {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &.nospace {
+      justify-content: inherit;
+    }
+    .col {
+      position: relative;
+      order: 1;
+    }
+
+    .col-3 {
+      width: 30%;
+      position: relative;
+    }
+    .col-2 {
+      width: 47%;
+      position: relative;
+    }
+  }
+
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .box {
+    border: 2px solid $primary;
+    padding: $padding;
+    h1, h2, h3, h4, h5 {
+      background: $primary;
+      margin: -$padding;
+      padding: $padding;
+      margin-bottom: $padding;
+    }
+  }
+  .footnote {
+    font-size: $font-xs;
+    position: absolute;
+    bottom: 5px;
+
+  }
+
+  .tophalf, .bottomhalf{
+    position: absolute;
+    height: 50%;
+  }
+  .bottomhalf{
+    top: 50%;
+  }
+
+  ul.space {
+    li {
+      padding-bottom: 1em;
+    }
+  }
+
+  cite {
+    border-left: 2px solid $primary;
+    padding-left: $padding;
+    display: block;
+    font-style: italic;
+  }
+  //sizes
+  .s {
+    font-size: $font-s;
+  }
+  .xs {
+    font-size: $font-xs;
+  }
+
+  &.slide .slides > section.full, &.slide .slides .stack  section.full {
+    min-height: 100% !important;
+    position: absolute !important;
+    top: 0 !important;
+    align-items: center !important;
+  }
+
+  *.white {
+    color: $white;
+  }
+
+  //foto collage
+  .collage6 {
+    max-width: 100%;
+    display: block;
+  }
+}
+
+.print-pdf .reveal.slide .slides > section.full, .print-pdf .reveal.slide .slides > section > section.full {
+  min-height: 770px !important;
+  position: relative !important;
+}
+
