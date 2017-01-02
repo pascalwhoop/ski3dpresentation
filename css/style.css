@@ -38,6 +38,8 @@
   top: 50%; }
 .reveal ul.space li {
   padding-bottom: 1em; }
+.reveal ul.nodots li {
+  list-style-type: none; }
 .reveal cite {
   border-left: 2px solid #717171;
   padding-left: 10px;

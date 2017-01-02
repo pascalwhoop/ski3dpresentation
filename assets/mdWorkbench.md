@@ -1,6 +1,6 @@
-### Boundry Spanning Activities
+### Trading Zones
 
-- describing activies between classic skill domains
-- bridging e.g. marketing and IT, HR and finance, ...
-- lead to knowledge transfer
 
+- Places where two distinct disciplines come together 
+- development of common language representing interests in different fields
+- also sometimes represented by intermediary

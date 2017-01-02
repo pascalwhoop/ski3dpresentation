@@ -61,9 +61,16 @@ $font-s: 0.75em;
     top: 50%;
   }
 
-  ul.space {
-    li {
-      padding-bottom: 1em;
+  ul {
+    &.space {
+      li {
+        padding-bottom: 1em;
+      }
+    }
+    &.nodots{
+      li{
+        list-style-type: none;
+      }
     }
   }
 
