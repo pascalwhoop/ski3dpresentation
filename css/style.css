@@ -1,3 +1,13 @@
+body .reveal * {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 300; }
+
+.reveal .controls {
+  display: none !important; }
+.reveal section img {
+  border-width: 1px;
+  box-shadow: none;
+  background: none; }
 .reveal .row {
   text-align: left;
   display: flex;
@@ -20,10 +30,10 @@
   margin-right: auto;
   display: block; }
 .reveal .box {
-  border: 2px solid #717171;
+  border: 2px solid #bfbfbf;
   padding: 10px; }
   .reveal .box h1, .reveal .box h2, .reveal .box h3, .reveal .box h4, .reveal .box h5 {
-    background: #717171;
+    background: #bfbfbf;
     margin: -10px;
     padding: 10px;
     margin-bottom: 10px; }
@@ -41,7 +51,7 @@
 .reveal ul.nodots li {
   list-style-type: none; }
 .reveal cite {
-  border-left: 2px solid #717171;
+  border-left: 2px solid #bfbfbf;
   padding-left: 10px;
   display: block;
   font-style: italic; }
