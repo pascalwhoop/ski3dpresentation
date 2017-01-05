@@ -1,7 +1,20 @@
 body {
   background: #f9f9f9;
-  background-color: #f9f9f9;
-  box-shadow: inset 0 0 80px 0; }
+  background-color: #f9f9f9; }
+
+#SiegelWrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.93); }
+  #SiegelWrapper img {
+    width: 700px;
+    z-index: -100;
+    right: -80px;
+    top: -100px;
+    position: absolute; }
 
 body .reveal * {
   font-family: 'Helvetica Neue', sans-serif;
@@ -35,10 +48,11 @@ body .reveal * {
   margin-right: auto;
   display: block; }
 .reveal .box {
-  border: 2px solid #bfbfbf;
+  border: 2px solid #356594;
   padding: 10px; }
   .reveal .box h1, .reveal .box h2, .reveal .box h3, .reveal .box h4, .reveal .box h5 {
-    background: #bfbfbf;
+    background: #356594;
+    color: white;
     margin: -10px;
     padding: 10px;
     margin-bottom: 10px; }
@@ -56,7 +70,7 @@ body .reveal * {
 .reveal ul.nodots li {
   list-style-type: none; }
 .reveal cite {
-  border-left: 2px solid #bfbfbf;
+  border-left: 2px solid #356594;
   padding-left: 10px;
   display: block;
   font-style: italic; }
